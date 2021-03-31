@@ -25,7 +25,7 @@
  """
 
 import config
-from DISClib.DataStructures import liststructure as lt
+from DISClib.ADT import list as lt
 from DISClib.Utils import error as error
 assert config
 
