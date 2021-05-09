@@ -276,12 +276,12 @@ def getEdge(graph, vertexa, vertexb):
         for edge in lt.iterator(lst):
             if (graph['directed']):
                 if (e.either(edge) == vertexa and
-                   (e.other(edge, e.either(edge)) == vertexb)):
+                   (e.other(edge) == vertexb)):
                     return edge
             elif(e.either(edge) == vertexa or
-                 (e.other(edge, e.either(edge)) == vertexa)):
+                 (e.other(edge) == vertexa)):
                 if (e.either(edge) == vertexb or
-                   (e.other(edge, e.either(edge)) == vertexb)):
+                   (e.other(edge) == vertexb)):
                     return edge
         return None
     except Exception as exp:
@@ -364,7 +364,7 @@ def adjacents(graph, vertex):
         for edge in lt.iterator(lst):
             v = e.either(edge)
             if (v == vertex):
-                lt.addLast(lstresp, e.other(edge, v))
+                lt.addLast(lstresp, e.other(edge))
             else:
                 lt.addLast(lstresp, v)
         return lstresp

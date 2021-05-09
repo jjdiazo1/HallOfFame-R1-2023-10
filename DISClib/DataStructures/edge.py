@@ -57,7 +57,7 @@ def either(edge):
     return edge['vertexA']
 
 
-def other(edge, vertex):
+def other(edge):
     """
     Retorna el vertice B del arco
     """

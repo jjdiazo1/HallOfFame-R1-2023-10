@@ -76,7 +76,7 @@ def relax(search, edge):
     """
     try:
         v = e.either(edge)
-        w = e.other(edge, v)
+        w = e.other(edge)
         visited_v = map.get(search['visited'], v)['value']
         visited_w = map.get(search['visited'], w)['value']
         distw = visited_w['distTo']
