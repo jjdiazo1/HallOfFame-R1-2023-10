@@ -250,13 +250,14 @@ def deleteElement(lst, pos):
         searchpos = 1
         if (pos == 1):
             lst['first'] = lst['first']['next']
+            lst['size'] -= 1
         elif(pos > 1):
             while searchpos < pos:
                 searchpos += 1
                 prev = node
                 node = node['next']
             prev['next'] = node['next']
-        lst['size'] -= 1
+            lst['size'] -= 1
         return lst
     except Exception as exp:
         error.reraise(exp, 'singlelinkedlist->deleteElement: ')
@@ -380,10 +381,11 @@ def isPresent(lst, element):
             node = lst['first']
             keyexist = False
             for keypos in range(1, size+1):
-                if (compareElements(lst, element, node['info']) == 0):
-                    keyexist = True
-                    break
-                node = node['next']
+                if (node is not None):
+                    if (compareElements(lst, element, node['info']) == 0):
+                        keyexist = True
+                        break
+                    node = node['next']
             if keyexist:
                 return keypos
         return 0
@@ -504,10 +506,13 @@ def compareElements(lst, element, info):
     Raises:
         Exception
     """
-    if(lst['key'] is not None):
-        return lst['cmpfunction'](element[lst['key']], info[lst['key']])
-    else:
-        return lst['cmpfunction'](element, info)
+    try:
+        if(lst['key'] is not None):
+            return lst['cmpfunction'](element[lst['key']], info[lst['key']])
+        else:
+            return lst['cmpfunction'](element, info)
+    except Exception as exp:
+        error.reraise(exp, 'singlelinkedlist->compareElements')
 
 
 def defaultfunction(id1, id2):

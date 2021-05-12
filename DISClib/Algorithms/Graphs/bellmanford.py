@@ -83,7 +83,7 @@ def relax(graph, search, v):
         if edges is not None:
             for edge in lt.iterator(edges):
                 v = e.either(edge)
-                w = e.other(edge)
+                w = e.other(edge, v)
                 distv = map.get(search['distTo'], v)['value']
                 distw = map.get(search['distTo'], w)['value']
                 distweight = distv + e.weight(edge)
@@ -186,7 +186,7 @@ def findNegativeCycle(graph, search):
             if (edge is not None):
                 edge = edge['value']
                 g.addEdge(search['spt'], e.either(edge),
-                          e.other(edge), e.weight(edge))
+                          e.other(edge, e.either(edge)), e.weight(edge))
         finder = c.DirectedCycle(search['spt'])
         search['cycle'] = not st.isEmpty(c.cycle(finder))
         return search

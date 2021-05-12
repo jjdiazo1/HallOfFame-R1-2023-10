@@ -75,7 +75,7 @@ def dfs(graph, search, v):
         map.put(search['onStack'], v, True)
         edges = g.adjacentEdges(graph, v)
         for edge in lt.iterator(edges):
-            w = e.other(edge)
+            w = e.other(edge, v)
             if (not st.isEmpty(search['cycle'])):
                 return search
             elif ((not map.get(search['marked'], w)['value'])):

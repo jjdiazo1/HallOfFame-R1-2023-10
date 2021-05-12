@@ -57,11 +57,14 @@ def either(edge):
     return edge['vertexA']
 
 
-def other(edge):
+def other(edge, veither):
     """
     Retorna el vertice B del arco
     """
-    return edge['vertexB']
+    if (veither == edge['vertexA']):
+        return edge['vertexB']
+    elif (veither == edge['vertexB']):
+        return edge['vertexA']
 
 
 def compareedges(edge1, edge2):
