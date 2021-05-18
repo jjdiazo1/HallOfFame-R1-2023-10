@@ -140,7 +140,7 @@ def hasPathTo(search, vertex):
     """
     try:
         distance = map.get(search['distTo'], vertex)['value']
-        return distance < math.inf
+        return not hasNegativecycle(search) and distance < math.inf
 
     except Exception as exp:
         error.reraise(exp, 'bellman:haspathto')
