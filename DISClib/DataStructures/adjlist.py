@@ -334,7 +334,8 @@ def addEdge(graph, vertexa, vertexb, weight=0):
         lt.addLast(entrya['value'], edge)
         if (not graph['directed']):
             entryb = map.get(graph['vertices'], vertexb)
-            lt.addLast(entryb['value'], edge)
+            edgeb = e.newEdge(vertexb, vertexa, weight)
+            lt.addLast(entryb['value'], edgeb)
         else:
             degree = map.get(graph['indegree'], vertexb)
             map.put(graph['indegree'], vertexb, degree['value']+1)
