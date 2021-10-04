@@ -136,7 +136,7 @@ dmypy.json
 #Python Cache
 #Data
 *.csv
-!Data/category-id.csv
-!Data/videos-small.csv
+!Data/MoMA/Artists-utf8-small.csv
+!Data/MoMA/Artworks-utf8-small.csv
 
 .vim
