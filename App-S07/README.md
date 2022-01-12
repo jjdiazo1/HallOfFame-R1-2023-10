@@ -1,4 +1,3 @@
 # INTEGRANTES
-
-Req. 4 - Carolina Chinchilla
-Req. 3 - Sofía Escobar
+<!-- aqui van los nombres de los integrantes -->
+TODO

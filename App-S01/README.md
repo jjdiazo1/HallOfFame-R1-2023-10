@@ -1,4 +1,3 @@
 # INTEGRANTES
-
-Req 2. Nicolas Merchan Cuestas
-Req 3. Andrés Felipe Castro Leguizamon
+<!-- aqui van los nombres de los integrantes -->
+TODO

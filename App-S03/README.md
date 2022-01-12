@@ -1,4 +1,3 @@
 # INTEGRANTES
-
-David A. Fuquen Flórez, Requerimiento individual: 3
-Juan Andrés Eslava Tovar, Requerimiento individual: 4
+<!-- aqui van los nombres de los integrantes -->
+TODO
