@@ -1,5 +1,5 @@
 # INTEGRANTES
 
-- Verónica Isaza, 202220917, v.isaza@uniandes.edu.co
-- Tomas Iriarte, 202220915, t.iriarte@uniandes.edu.co
-- Valentina Echeverri, 202012025, v.echeverrib@uniandes.edu.co
+1. Student No. 1 Verónica Isaza.
+1. Student No. 2 Tomas Iriarte.
+1. Student No. 3 Valentina Echeverri.

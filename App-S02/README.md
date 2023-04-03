@@ -1,6 +1,6 @@
 # INTEGRANTES
 <!-- aqui van los nombres de los integrantes -->
 
-1. Jorge Eduardo Solórzano Díaz, <j.solorzanod@uniandes.edu.co>, 202115798. 
-1. Juan Camilo Lyons Bustamante, <jc.lyons@uniandes.edu.co>, 201913100. 
-1. Juan Andrés Vargas Bolaños, <ja.vargasb1@uniandes.edu.co>, 202110398. 
+1. Student No. 1 Jorge Eduardo Solórzano Díaz.
+1. Student No. 2 Juan Camilo Lyons Bustamante.
+1. Student No. 3 Juan Andrés Vargas Bolaños.
