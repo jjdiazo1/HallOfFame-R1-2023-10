@@ -136,7 +136,5 @@ dmypy.json
 #Python Cache
 #Data
 *.csv
-!Data/MoMA/Artists-utf8-small.csv
-!Data/MoMA/Artworks-utf8-small.csv
-
+!Data/DIAN/Salida_agregados_renta_juridicos_AG-small.csv
 .vim
